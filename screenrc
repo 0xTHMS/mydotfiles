@@ -1,0 +1,12 @@
+# My screenrc with statusbar changing with program's title instead of just /bin/bash
+
+autodetach on
+
+shell -${SHELL}
+defscrollback 2024
+startup_message off
+hardstatus on
+
+vbell off
+hardstatus alwayslastline
+hardstatus string '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %d/%m %{W}%c %{g}]'C
